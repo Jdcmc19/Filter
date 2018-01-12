@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="pane" prefHeight="617.0" prefWidth="740.0">
+         <children>
+            <Button fx:id="btoCargarTabla1" layoutX="301.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Cargar" />
+            <Button fx:id="btoListo" layoutX="230.0" layoutY="503.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Listo" />
+            <CheckBox fx:id="checkF0pares" layoutX="30.0" layoutY="75.0" mnemonicParsing="false" text="Pares" />
+            <CheckBox fx:id="checkF1impares" layoutX="30.0" layoutY="92.0" mnemonicParsing="false" text="Impares" />
+            <CheckBox fx:id="checkF2consecutivos3" layoutX="30.0" layoutY="109.0" mnemonicParsing="false" text="3 Consecutivos" />
+            <CheckBox fx:id="checkF3consecutivos5" layoutX="30.0" layoutY="126.0" mnemonicParsing="false" text="5 Consecutivos" />
+            <TableView fx:id="tableCombinaciones" layoutX="230.0" layoutY="47.0" prefHeight="373.0" prefWidth="140.0">
+              <columns>
+                  <TableColumn fx:id="col0" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col1" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col2" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col3" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col4" prefWidth="25.0" resizable="false" text="-" />
+              </columns>
+            </TableView>
+            <Button fx:id="btoEliminarCombinacion" layoutX="301.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Eliminar" />
+            <Button fx:id="btoRehacer" layoutX="230.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Rehacer" />
+            <TextField fx:id="txtNombreArchivo" layoutX="30.0" layoutY="528.0" prefHeight="25.0" prefWidth="158.0" text="Combinaciones" />
+            <TableView fx:id="tableCombinacionesedit" layoutX="429.0" layoutY="47.0" prefHeight="373.0" prefWidth="140.0">
+               <columns>
+                  <TableColumn fx:id="col0edit" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col1edit" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col2edit" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col3edit" prefWidth="25.0" resizable="false" text="-" />
+                  <TableColumn fx:id="col4edit" prefWidth="25.0" resizable="false" text="-" />
+               </columns>
+            </TableView>
+            <Button fx:id="btoEliminaredit" layoutX="500.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Eliminar" />
+            <Button fx:id="btoRehaceredit" layoutX="429.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Rehacer" />
+            <CheckBox fx:id="num0" layoutX="25.0" layoutY="308.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="00" />
+            <CheckBox fx:id="num1" layoutX="25.0" layoutY="325.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="01" />
+            <CheckBox fx:id="num2" layoutX="25.0" layoutY="342.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="02" />
+            <CheckBox fx:id="num3" layoutX="25.0" layoutY="359.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="03" />
+            <CheckBox fx:id="num4" layoutX="25.0" layoutY="376.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="04" />
+            <CheckBox fx:id="num5" layoutX="25.0" layoutY="393.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="05" />
+            <CheckBox fx:id="num6" layoutX="25.0" layoutY="410.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="06" />
+            <CheckBox fx:id="num7" layoutX="25.0" layoutY="427.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="07" />
+            <CheckBox fx:id="num8" layoutX="25.0" layoutY="444.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="08" />
+            <CheckBox fx:id="num9" layoutX="25.0" layoutY="461.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="09" />
+            <CheckBox fx:id="num10" layoutX="65.0" layoutY="325.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="10" />
+            <CheckBox fx:id="num11" layoutX="65.0" layoutY="342.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="11" />
+            <CheckBox fx:id="num12" layoutX="65.0" layoutY="359.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="12" />
+            <CheckBox fx:id="num13" layoutX="65.0" layoutY="376.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="13" />
+            <CheckBox fx:id="num14" layoutX="65.0" layoutY="393.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="14" />
+            <CheckBox fx:id="num15" layoutX="65.0" layoutY="410.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="15" />
+            <CheckBox fx:id="num16" layoutX="65.0" layoutY="427.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="16" />
+            <CheckBox fx:id="num17" layoutX="65.0" layoutY="444.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="17" />
+            <CheckBox fx:id="num18" layoutX="65.0" layoutY="461.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="18" />
+            <CheckBox fx:id="num19" layoutX="105.0" layoutY="325.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="19" />
+            <CheckBox fx:id="num20" layoutX="105.0" layoutY="342.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="20" />
+            <CheckBox fx:id="num21" layoutX="105.0" layoutY="359.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="21" />
+            <CheckBox fx:id="num22" layoutX="105.0" layoutY="376.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="22" />
+            <CheckBox fx:id="num23" layoutX="105.0" layoutY="393.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="23" />
+            <CheckBox fx:id="num24" layoutX="105.0" layoutY="410.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="24" />
+            <CheckBox fx:id="num25" layoutX="105.0" layoutY="427.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="25" />
+            <CheckBox fx:id="num26" layoutX="105.0" layoutY="444.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="26" />
+            <CheckBox fx:id="num27" layoutX="105.0" layoutY="461.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="27" />
+            <CheckBox fx:id="num28" layoutX="145.0" layoutY="325.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="28" />
+            <CheckBox fx:id="num29" layoutX="145.0" layoutY="342.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="29" />
+            <CheckBox fx:id="num30" layoutX="145.0" layoutY="359.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="30" />
+            <CheckBox fx:id="num31" layoutX="145.0" layoutY="376.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="31" />
+            <CheckBox fx:id="num32" layoutX="145.0" layoutY="393.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="32" />
+            <CheckBox fx:id="num33" layoutX="145.0" layoutY="410.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="33" />
+            <CheckBox fx:id="num34" layoutX="145.0" layoutY="427.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="34" />
+            <CheckBox fx:id="num35" layoutX="145.0" layoutY="444.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="35" />
+            <CheckBox fx:id="num36" layoutX="145.0" layoutY="461.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="36.0" text="36" />
+            <Button fx:id="btoGuardarTabla1" layoutX="230.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Guardar" />
+            <Button fx:id="btoCargarTabla2" layoutX="500.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Cargar" />
+            <Button fx:id="btoListoedit" layoutX="429.0" layoutY="503.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Listo" />
+            <Button fx:id="btoGuardarTabla2" layoutX="429.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Guardar" />
+            <Button fx:id="btoFiltrar" layoutX="230.0" layoutY="476.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Filtrar" />
+            <Label fx:id="lblTotalTabla1" layoutX="230.0" layoutY="528.0" prefHeight="27.0" prefWidth="140.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btoFiltraredit" layoutX="429.0" layoutY="476.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Filtrar" />
+            <Label fx:id="lblTotalTabla2" layoutX="429.0" layoutY="528.0" prefHeight="27.0" prefWidth="140.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <CheckBox fx:id="checkF4restarTablas" layoutX="30.0" layoutY="143.0" mnemonicParsing="false" text="Restar tablas" />
+            <TextField fx:id="txtFieldNuevoNumero" layoutX="30.0" layoutY="204.0" prefHeight="25.0" prefWidth="140.0" />
+            <Button fx:id="btoAgregar" layoutX="30.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Agregar" />
+            <Label layoutX="30.0" layoutY="503.0" text="Nombre del archivo:" />
+            <Label layoutX="84.0" layoutY="22.0" text="Filtros" />
+            <Label layoutX="282.0" layoutY="22.0" text="Tabla 1" />
+            <Label layoutX="481.0" layoutY="22.0" text="Tabla 2" />
+            <Label layoutX="82.0" layoutY="168.0" text="Tabla 1" />
+            <Label layoutX="82.0" layoutY="267.0" text="Tabla 2" />
+            <Separator layoutX="30.0" layoutY="47.0" prefHeight="0.0" prefWidth="140.0" />
+            <Separator layoutX="30.0" layoutY="183.0" prefHeight="17.0" prefWidth="140.0" />
+            <Separator layoutX="200.0" layoutY="43.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="0.0" />
+            <Separator layoutX="399.0" layoutY="42.0" orientation="VERTICAL" prefHeight="505.0" prefWidth="0.0" />
+            <Separator layoutX="31.0" layoutY="284.0" prefHeight="17.0" prefWidth="140.0" />
+            <Separator layoutX="30.0" layoutY="488.0" prefHeight="17.0" prefWidth="140.0" />
+            <Button fx:id="btoSelectTodos" layoutX="147.0" layoutY="263.0" maxHeight="25.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="0.0" text="T" />
+            <Button fx:id="btoSelectNinguno" layoutX="124.0" layoutY="263.0" maxHeight="25.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="0.0" text="F" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
